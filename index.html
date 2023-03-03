@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="audio.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="sttyle.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <title>Global Stereo</title>
+</head>
+<body>
+    <main>
+        <h1 style="color: #ffffff;">¡Sintoniza tu radio online!</h1>
+    <p style="color: #ffffff;">El sonido que mueve al mundo.</p>
+        <div class="contenedor">
+    <button id="repro" onclick="plays()">reproducir</button>
+    <button id="pau" onclick="pausar()" hidden>Pausar</button>
+                    <div class="contenedor1">             
+        <button id="sbvolumen" onclick="bajarvolumen()">Bajar volumen</button>
+                <button id="svolumen" onclick="subirvolumen()">Subir volumen</button>
+            </div>
+    <button id="silencio" onclick="silenciar()">Silenciar</button>
+    <button hidden id="silenciado" onclick="quitsilencio()">Activar volumen</button>
+        </div>
+    </main>
+</body>
+</html>
